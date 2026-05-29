@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. Core Layout & Typography
-   ========================================================================== */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,22 +13,20 @@ main {
     margin: 0 auto;
 }
 
-/* ==========================================================================
-   2. Header & Main Navigation Styling
-   ========================================================================== */
+
 header {
     max-width: 1000px;
     margin: 0 auto 20px auto;
 }
 
-/* Style the logo image */
+
 header > img {
     max-height: 90px;
     display: block;
     margin-bottom: 10px;
 }
 
-/* Stack navigation links vertically as seen in the screenshot */
+
 .mainnav {
     display: flex;
     flex-direction: column;
@@ -39,7 +35,7 @@ header > img {
 
 .mainnav a {
     text-decoration: none;
-    color: #1b365d; /* Dark corporate blue */
+    color: #1b365d; 
     font-size: 14px;
     font-weight: 500;
 }
@@ -48,24 +44,21 @@ header > img {
     text-decoration: underline;
 }
 
-/* ==========================================================================
-   3. Hero Section & Overlays (Image Layers)
-   ========================================================================== */
+
 .hero {
-    position: relative; /* Context parent for absolute positioned banners */
+    position: relative; 
     width: 100%;
     margin-bottom: 30px;
     overflow: hidden;
 }
 
-/* The main rafting banner image */
 .hero > img {
     width: 100%;
     display: block;
     height: auto;
 }
 
-/* Top Banner Title Overlay */
+
 .hero h1 {
     position: absolute;
     top: 0;
@@ -73,7 +66,7 @@ header > img {
     width: 100%;
     margin: 0;
     padding: 15px 0;
-    background-color: rgba(20, 48, 92, 0.85); /* Semi-transparent dark blue */
+    background-color: rgba(20, 48, 92, 0.85); 
     color: #ffffff;
     text-align: center;
     font-size: 32px;
@@ -81,13 +74,13 @@ header > img {
     letter-spacing: 0.5px;
 }
 
-/* Bottom Mission/Content Box Overlay */
+
 .hero article {
     position: absolute;
     bottom: 25px;
     left: 2.5%;
     width: 95%;
-    background-color: rgba(20, 48, 92, 0.75); /* Matching semi-transparent blue */
+    background-color: rgba(20, 48, 92, 0.75); 
     color: #ffffff;
     padding: 20px;
     box-sizing: border-box;
@@ -104,7 +97,7 @@ header > img {
     flex: 1;
 }
 
-/* Small thumbnail image inside the banner overlay */
+
 .hero article img {
     width: 120px;
     height: 80px;
@@ -113,15 +106,13 @@ header > img {
     flex-shrink: 0;
 }
 
-/* ==========================================================================
-   4. Section Content & Structural Headings
-   ========================================================================== */
+
 section {
     max-width: 1000px;
     margin: 0 auto 30px auto;
 }
 
-/* Full width blue ribbon heading style */
+
 section h2 {
     background-color: #1a3668;
     color: #ffffff;
@@ -139,9 +130,7 @@ section p {
     margin: 0;
 }
 
-/* ==========================================================================
-   5. Footer & Social Media Link Styling
-   ========================================================================== */
+
 footer {
     max-width: 1000px;
     margin: 40px auto 10px auto;
@@ -149,7 +138,7 @@ footer {
     padding-top: 15px;
 }
 
-/* Horizontal alignment for social block elements */
+
 .socialmedia {
     display: flex;
     align-items: center;
@@ -162,10 +151,10 @@ footer {
 }
 
 .socialmedia a:hover {
-    transform: scale(1.08); /* Subtle crisp pop effect on hover */
+    transform: scale(1.08); 
 }
 
-/* Unified sizing for social SVGs/images */
+
 .socialmedia img {
     width: 36px;
     height: 36px;
