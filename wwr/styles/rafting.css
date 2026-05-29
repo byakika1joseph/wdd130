@@ -9,15 +9,23 @@ body {
 }
 
 
-*{margin:0;
+ :root {--primary-color: hwb(277 3% 41%);
+--secondary-color: #0c61f4;
+--accent-color: #291d04;
+--accent2-color: #603c08;
+--heading-font: "Times New Roman", Georgia, serif;
+--body-font: Arial, Helvetica, sans-serif;}
+
+
+* {margin:0;
 padding:0;
-box-sizing:border-box;
-}
+box-sizing:border-box;}
+
 
 main {
     max-width: 1000px;
     margin: 0 auto;
-}
+}S
 
 
 header {
