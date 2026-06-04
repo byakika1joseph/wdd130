@@ -41,22 +41,182 @@ header > img {
 }
 
 
-.mainnav {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    display: grid;
+    /* Column 1 (Logo): shrinks to image size | Column 2 (Nav): fills the rest */
+    grid-template-columns: auto 1fr;
+    /* Vertically aligns the logo and navigation text perfectly in the middle */
+    align-items: center; 
+    
+    /* Branding and Spacing */
+    background-color: var(--card-bg-color);
+    padding: 10px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+    border-bottom: 4px solid var(--primary-color); /* Strong thematic accent line */
+    
+    /* Keeps header crisp on fast scrolls */
+    position: relative;
+    z-index: 100; 
 }
 
-.mainnav a {
+/* Logo Image */
+header img {
+    height: 75px;         /* Explicit height to keep branding uniform */
+    width: auto;          /* Maintains aspect ratio without distortion */
+    display: block;       /* Eliminates default inline baseline spacing gaps */
+    transition: transform 0.3s ease;
+}
+
+/* Optional interactive easter egg for your logo */
+header img:hover {
+    transform: scale(1.03); /* Subtle pop effect when hovering over the logo */
+}
+
+/* Navigation Bar Container */
+nav {
+    display: flex;        /* Activates Flexbox for horizontal alignment of links */
+    align-items: center;  /* Ensures vertical alignment inside the flex line */
+    gap: 25px;            /* Evenly spaces links without messy margin calculations */
+    justify-self: end;    /* Pushes the entire navigation menu to the far right */
+}
+
+/* Individual Navigation Links */
+nav a {
     text-decoration: none;
-    color: #1b365d; 
-    font-size: 14px;
-    font-weight: 500;
+    color: var(--secondary-color); /* Starts dark for high contrast reading */
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 600;              /* Semibold for a clean, professional layout */
+    font-size: 1.1rem;
+    padding: 8px 4px;
+    position: relative;            /* Prepares link for a smooth hover underline effect */
+    transition: color 0.25s ease;
 }
 
-.mainnav a:hover {
-    text-decoration: underline;
+/* Hover & Active States */
+nav a:hover {
+    color: var(--accent-color);    /* Shifts seamlessly to your active accent color */
 }
+
+/* Clean, modern sliding underline accent on hover */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left; 
+}
+
+
+
+
+
+
+
+
+
+
+/* --- History Section Layout --- */
+.history-section {
+    background-color: var(--card-bg-color);
+    padding: 40px 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Centers the "History" heading exactly like the wireframe */
+.history-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+/* The Grid Container that aligns the text-image-text row */
+.history-container {
+    display: grid;
+    /* Creates 3 columns: text blocks take equal fractional space, image stays fixed/flexible */
+    grid-template-columns: 1fr auto 1fr;
+    /* Centers all 3 items vertically relative to each other */
+    align-items: center;
+    /* Creates a clean gap between the text blocks and the center image */
+    gap: 30px;
+}
+
+/* Styles the text paragraphs for clean readability */
+.history-container p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: justify; /* Optional: matches the clean blocked look of wireframe text */
+}
+
+/* Styles the center image box wrapper */
+.history-image-box {
+    width: 250px; /* Adjust this width based on how big you want your center image */
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.history-image-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 4px solid var(--primary-color); /* Thematic framing color */
+}
+
+/* --- Responsive Layout (Mobile Friendly) --- */
+/* When the screen is narrow, stack the elements cleanly so they don't squash */
+@media (max-width: 768px) {
+    .history-container {
+        grid-template-columns: 1fr; /* Drop to a single column stack */
+        gap: 20px;
+    }
+    
+    .history-image-box {
+        grid-row: 2; /* Forces the image to remain in the middle of the two text blocks on mobile */
+        justify-self: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .hero {

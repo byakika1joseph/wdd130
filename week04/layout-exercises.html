@@ -1,67 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Layout Exercises</title>
-    <link rel="stylesheet" href="styles/layout-exercises.css">
+    <title>About Us - Rapids White Water Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
 <body>
+
+    <header class="header-container">
+        <img src="images/logo.jpg" alt="Rapids Logo" class="logo">
+        <nav class="mainnav">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav> 
+    </header>
+
     <main>
-        <h1>CSS Layout Exercises</h1>
-        <hr>
-        <p>✅ 1. Center the paragraph content both horizontally and vertically with each div using CSS Flex or CSS Grid.
-        </p>
-        <div class="one flex">
-            <p>Use CSS Flex</p>
+        <!-- Hero Section Overlay -->
+        <div class="hero">
+            <img src="images/rafting14_1024.jpg" alt="Rafting Adventure">
+            <h1>White Water Rafting</h1>
+            <article>
+                <p>Our mission is to navigate the turbulent currents of existence, channeling the raw, gravitational momentum of the cosmos to forge pathways where others only see chaos. We don't just follow trends, we ignite them—anchoring our purpose in the brilliant, unreasonable pursuit of absolute mastery.</p>
+                <img src="images/rafting58_600.jpg" alt="Thumbnail">
+            </article>
         </div>
-        <div class="one grid">
-            <p>Use CSS Grid</p>
-        </div>
-        <hr>
-        <p>✅ 2. Create a single row of div items within the container div, if the screen is wide enough. Otherwise
-            design the
-            divs to stack within the given width space. Make sure there is equal space between items and the sides.</p>
-        <div class="container2">
-            <div class="two">
-                <p>Item 1</p>
-            </div>
-            <div class="two">
-                <p>Item 2</p>
-            </div>
-            <div class="two">
-                <p>Item 3</p>
-            </div>
-        </div>
-        <hr>
-        <p>✅ 3. Create a table using grid where the first row spans the three columns. </p>
-        <div class="container3">
-            <div class="three columns-3">
-                <p>Title</p>
-            </div>
-            <div class="three">
-                <p>Cell 1</p>
-            </div>
-            <div class="three">
-                <p>Cell 2</p>
-            </div>
-            <div class="three">
-                <p>Cell 3</p>
-            </div>
-            <div class="three">
-                <p>Cell 4</p>
-            </div>
-            <div class="three">
-                <p>Cell 5</p>
-            </div>
-            <div class="three">
-                <p>Cell 6</p>
-            </div>
 
-        </div>
+        <!-- History Split Section -->
+        <section class="history-section">
+            <h2>History</h2>
+            <div class="history-grid">
+                <p class="history-left">Born from profound alignment, we began as a single spark in a noisy ocean. By systematically pulling order from chaos, we have expanded our footprint.</p>
+                <div class="history-center-img">
+                    <img src="images/rafting58_600.jpg" alt="History Centerpiece">
+                </div>
+                <p class="history-right">We transformed raw, unreasonable ideas into realities that defy gravity, breaking records and charting wild paths across beautiful world rapids.</p>
+            </div>
+        </section>
+
+        <!-- Gallery Grid Section -->
+        <section class="adventure-section">
+            <h2>Adventure Awaits You</h2>
+            <div class="adventure-gallery">
+                <figure class="gallery-item">
+                    <img src="images/rafting14_1024.jpg" alt="Adventure 1">
+                    <figcaption>Salmon River</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/rafting14_1024.jpg" alt="Adventure 2">
+                    <figcaption>Colorado River</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/rafting14_1024.jpg" alt="Adventure 3">
+                    <figcaption>Gauley River</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/rafting14_1024.jpg" alt="Adventure 4">
+                    <figcaption>Kenai River</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/rafting14_1024.jpg" alt="Adventure 5">
+                    <figcaption>Snake River</figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
-</body>
 
+    <footer class="footer-container">
+        <p class="footer-text">&copy;2026 | Rapids! | Susan Student</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+        </nav>
+    </footer>
+
+</body>
 </html>
