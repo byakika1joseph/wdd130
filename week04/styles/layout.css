@@ -56,9 +56,7 @@ main {
 
 
 
-/* ==========================================================================
-   3. Hero Banner Styling 
-   ========================================================================== */
+
 .hero {
     position: relative;
     width: 100%;
@@ -95,7 +93,7 @@ main {
     border: 1px solid #1a3668;
     padding: 20px;
     box-sizing: border-box;
-    /* Removed display: grid to allow the child image to float naturally */
+    
 }
 
 .hero article p {
@@ -103,10 +101,10 @@ main {
     font-size: 15px;
 }
 
-/* Updated to use float: right exactly as the grading script expects */
+
 .hero article img {
     float: right;
-    margin-left: 20px; /* Keeps the text from hugging the image tightly */
+    margin-left: 20px;
     width: 130px;
     height: 90px;
     object-fit: cover;

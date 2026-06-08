@@ -1,21 +1,162 @@
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-}
-
-th,
-td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
+/* ==========================================================================
+   8. Contact Us Structural Page Layout
+   ========================================================================== */
+.company-profile {
     text-align: center;
+    margin: 20px 0 40px 0;
 }
 
-thead th,
-tfoot tr {
-    background-color: #000;
-    color: #fff;
-    font-weight: 700;
+.company-profile h1 {
+    color: #1a3668;
+    margin: 0 0 10px 0;
+    font-size: 32px;
+}
+
+.company-profile address {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.company-profile address a {
+    color: #1a3668;
+    text-decoration: none;
+}
+
+/* Two column side-by-side split row wrapper for map and form blocks */
+.contact-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+    align-items: start;
+}
+
+.map-box {
+    border: 1px solid #cccccc;
+    background-color: #eaeaea;
+}
+
+.map-box iframe {
+    display: block;
+}
+
+/* ==========================================================================
+   9. Form Component Layout Styles
+   ========================================================================== */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-field label, 
+.group-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a3668;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+/* Radio button cluster stack formatting */
+.radio-group {
+    gap: 8px;
+    margin: 5px 0;
+}
+
+.radio-group label, 
+.checkbox-field label {
+    font-weight: normal;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* Clean, standard gray button look changing to primary blue on hover */
+.form-btn {
+    background-color: #e0e0e0;
+    color: #333333;
+    border: 1px solid #999999;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.form-btn:hover {
+    background-color: #1a3668;
+    color: #ffffff;
+    border-color: #1a3668;
+}
+
+/* ==========================================================================
+   10. Employee Profile 3-Column Section (Shared Title Styles)
+   ========================================================================== */
+.team-section {
+    margin-top: 50px;
+    border-top: 1px solid #dddddd;
+    padding-top: 30px;
+}
+
+.team-section h2 {
+    text-align: center;
+    color: #1a3668;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+/* 3-Column Grid for Employee Profiles */
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.profile-card {
+    margin: 0;
+    background-color: #f4f6f9;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.profile-icon {
+    font-size: 40px;
+    color: #a0aec0;
+    margin-bottom: 10px;
+}
+
+.profile-card h3 {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    color: #1a3668;
+}
+
+.profile-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #666666;
 }
