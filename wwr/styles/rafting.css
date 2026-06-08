@@ -24,6 +24,12 @@
     text-decoration: none;
 }
 
+.company-address p {
+    margin: 4px 0;
+    font-size: 15px;
+    color: #555555;
+}
+
 /* Two column side-by-side split row wrapper for map and form blocks */
 .contact-layout-grid {
     display: grid;
