@@ -1,0 +1,160 @@
+/* ==========================================================================
+   11. Trips Page Layout - CTA & Feature Blocks
+   ========================================================================== */
+.trips-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Call to Action Accent Box Layout */
+.trips-cta-banner {
+    background-color: #f1f5f9;
+    border: 2px dashed #1a3668;
+    padding: 30px;
+    text-align: center;
+    border-radius: 6px;
+    margin: 20px 0 50px 0;
+}
+
+.trips-cta-banner h1 {
+    color: #1a3668;
+    font-size: 32px;
+    margin: 0 0 10px 0;
+}
+
+.trips-cta-banner p {
+    font-size: 16px;
+    color: #444444;
+    margin: 0 0 20px 0;
+}
+
+/* Reusing button hover design parameters into the active CTA style rule */
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1a3668;
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #2c4d82;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ==========================================================================
+   12. Multi-Column Detailed Trip Excursions Grid
+   ========================================================================== */
+.trip-showcase {
+    margin-bottom: 60px;
+}
+
+.trip-showcase h2 {
+    text-align: center;
+    color: #1a3668;
+    font-size: 26px;
+    margin-bottom: 35px;
+}
+
+/* Break out from a single-column flow layout into a clean multi-column grid */
+.trip-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.trip-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.trip-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.trip-card-content h3 {
+    margin: 0 0 8px 0;
+    color: #1a3668;
+    font-size: 18px;
+}
+
+.trip-duration {
+    font-size: 13px;
+    font-weight: bold;
+    color: #718096;
+    margin: 0 0 12px 0;
+}
+
+.trip-card-content p:not(.trip-duration) {
+    margin: 0;
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   13. Structured Data Matrix Table Styling
+   ========================================================================== */
+.trip-table-section {
+    margin-bottom: 50px;
+}
+
+.trip-table-section h2 {
+    text-align: center;
+    color: #1a3668;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.table-wrapper {
+    overflow-x: auto; /* Keeps layout responsive if data stretches outside grid */
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.trips-table th {
+    background-color: #1a3668;
+    color: #ffffff;
+    padding: 12px 15px;
+    font-weight: bold;
+}
+
+.trips-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #333333;
+}
+
+/* Subtle striped row alternative for readability */
+.table-row-alt {
+    background-color: #f8fafc;
+}
+
+.trips-table tbody tr:hover {
+    background-color: #edf2f7;
+}
