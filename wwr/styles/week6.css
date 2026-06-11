@@ -1,13 +1,11 @@
-/* ==========================================================================
-   11. Trips Page Layout - CTA & Feature Blocks
-   ========================================================================== */
+
 .trips-main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Call to Action Accent Box Layout */
+
 .trips-cta-banner {
     background-color: #f1f5f9;
     border: 2px dashed #1a3668;
@@ -29,7 +27,7 @@
     margin: 0 0 20px 0;
 }
 
-/* Reusing button hover design parameters into the active CTA style rule */
+
 .cta-button {
     display: inline-block;
     text-decoration: none;
@@ -47,9 +45,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* ==========================================================================
-   12. Multi-Column Detailed Trip Excursions Grid
-   ========================================================================== */
+
 .trip-showcase {
     margin-bottom: 60px;
 }
@@ -61,7 +57,7 @@
     margin-bottom: 35px;
 }
 
-/* Break out from a single-column flow layout into a clean multi-column grid */
+
 .trip-cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -111,9 +107,7 @@
     line-height: 1.5;
 }
 
-/* ==========================================================================
-   13. Structured Data Matrix Table Styling
-   ========================================================================== */
+/
 .trip-table-section {
     margin-bottom: 50px;
 }
@@ -126,7 +120,7 @@
 }
 
 .table-wrapper {
-    overflow-x: auto; /* Keeps layout responsive if data stretches outside grid */
+    overflow-x: auto; 
 }
 
 .trips-table {
@@ -150,11 +144,31 @@
     color: #333333;
 }
 
-/* Subtle striped row alternative for readability */
+
 .table-row-alt {
     background-color: #f8fafc;
 }
 
 .trips-table tbody tr:hover {
     background-color: #edf2f7;
+}
+
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.socialmedia a img {
+    width: 15px;       
+    height: 15px;      
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+
+.socialmedia a img:hover {
+    transform: scale(1.1);
 }
